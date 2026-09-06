@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión - Veterinaria San Marcos</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <img src="img/logo.png" alt="Logo Veterinaria San Marcos">
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="registro.html">Registro</a>
+            <a href="login.html">Iniciar Sesión</a>
+        </nav>
+    </header>
+
+    <main>
+        <section style="max-width: 400px; margin: 40px auto; padding: 20px; border: 1px solid #ccc; border-radius: 8px; text-align: center;">
+            <h2>Iniciar Sesión</h2>
+            <form id="formLogin" style="display: flex; flex-direction: column; gap: 15px; margin-top: 20px; text-align: left;">
+                
+                <label>Correo Electrónico:</label>
+                <!-- Validación HTML5 básica combinada con JS -->
+                <input type="email" id="loginCorreo" maxlength="100" required>
+                
+                <label>Contraseña (4 a 10 caracteres):</label>
+                <input type="password" id="loginPass" minlength="4" maxlength="10" required>
+                
+                <button type="submit" style="padding: 10px; background-color: #1abc9c; color: white; border: none; cursor: pointer;">Ingresar</button>
+                <p id="login-error" style="font-weight: bold; text-align: center;"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Veterinaria San Marcos.</p>
+    </footer>
+
+    <script src="js/validaciones.js"></script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+/* Reseteo básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Navegación */
+header {
+    background-color: #2c3e50;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    color: #1abc9c;
+}
+
+/* Contenedor de Servicios */
+#contenedor-servicios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Tarjetas del catálogo */
+.tarjeta-servicio {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    width: 250px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    background-color: white;
+}
+
+.tarjeta-img {
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.tarjeta-titulo {
+    margin-top: 0;
+}
+
+.tarjeta-categoria {
+    color: #7f8c8d;
+    font-size: 14px;
+}
+
+.btn-detalle, .btn-agendar-cita {
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.btn-detalle {
+    background-color: #3498db;
+    color: white;
+}
+
+.btn-agendar-cita {
+    background-color: #2c3e50;
+    color: white;
+}
+
+.detalle-servicio {
+    display: none;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px dashed #ccc;
+    font-size: 13px;
+    text-align: left;
+}
+
+
+/* 1. Limitar el tamaño del logo para arreglar el header */
+header img {
+    max-height: 70px; 
+    width: auto;
+}
+
+/* 2. Centrar y dar espacio a la sección de bienvenida */
+.hero {
+    text-align: center;
+    padding: 50px 20px 30px 20px;
+    background-color: #f9f9f9; /* Fondo sutil para separar secciones */
+    border-bottom: 1px solid #eaeaea;
+    margin-bottom: 30px;
+}
+
+.hero h1 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+/* 3. Alinear el título del catálogo */
+.destacados h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}

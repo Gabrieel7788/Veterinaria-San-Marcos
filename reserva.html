@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Reservas - Veterinaria San Marcos</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <img src="img/logo.png" alt="Logo Veterinaria San Marcos">
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="novedades.html">Blog</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="reserva.html">Mis Reservas</a>
+            <a href="login.html">Iniciar Sesión</a>
+        </nav>
+    </header>
+
+    <main style="max-width: 800px; margin: 40px auto; padding: 0 20px;">
+        <h2>Servicios Seleccionados</h2>
+        <p>Revisa los servicios que has agregado antes de confirmar tu cita.</p>
+        
+        <!-- Aquí JavaScript inyectará la lista del LocalStorage -->
+        <div id="contenedor-reservas" style="margin-top: 20px;"></div>
+    </main>
+
+    <footer style="text-align: center; margin-top: 40px; padding: 20px; background-color: #f1f1f1;">
+        <p>&copy; 2024 Veterinaria San Marcos.</p>
+    </footer>
+
+    <script src="js/catalogo.js"></script>
+</body>
+</html>

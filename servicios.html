@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - Veterinaria San Marcos</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <img src="img/logo.png" alt="Logo Veterinaria San Marcos">
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="novedades.html">Blog</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="reserva.html">Mis Reservas</a>
+            <a href="login.html">Iniciar Sesión</a>
+        </nav>
+    </header>
+
+    <main style="max-width: 1000px; margin: 40px auto; padding: 0 20px; text-align: center;">
+        <h2>Catálogo de Servicios</h2>
+        <p>Selecciona los servicios que tu mascota necesita para agendar una cita.</p>
+        
+        <!-- Aquí JavaScript inyectará las tarjetas de los servicios -->
+        <div id="contenedor-servicios" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 30px;"></div>
+    </main>
+
+    <footer style="text-align: center; margin-top: 40px; padding: 20px; background-color: #f1f1f1;">
+        <p>&copy; 2024 Veterinaria San Marcos.</p>
+    </footer>
+
+    <!-- Conectamos el script que genera el catálogo -->
+    <script src="js/catalogo.js"></script>
+</body>
+</html>
