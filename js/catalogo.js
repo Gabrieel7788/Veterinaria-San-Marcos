@@ -5,7 +5,7 @@ const servicios = [
     { id: 'VA001', categoria: 'Vacunación', nombre: 'Vacuna antirrábica canina', especie: 'Perro', duracion: '10 min', precio: 12000, obs: 'Obligatoria por ley', imagen: 'img/vacuna.jpg' },
     { id: 'VA003', categoria: 'Vacunación', nombre: 'Vacuna bivalente felina', especie: 'Gato', duracion: '10 min', precio: 15000, obs: 'Refuerzo anual', imagen: 'img/vacuna.jpg' },
     { id: 'CI002', categoria: 'Cirugía', nombre: 'Esterilización macho canino', especie: 'Perro', duracion: '60 min', precio: 60000, obs: 'Incluye anestesia', imagen: 'img/gato.jpg' },
-    { id: 'OT002', categoria: 'Otros', nombre: 'Limpieza dental', especie: 'Perro / Gato', duracion: '45 min', precio: 55000, obs: 'Requiere anestesia', imagen: 'img/gato.jpg' }
+    { id: 'OT002', categoria: 'Otros', nombre: 'Limpieza dental', especie: 'Perro / Gato', duracion: '45 min', precio: 55000, obs: 'Requiere anestesia', imagen: 'img/dental.jpg' }
 ];
 
 // 2. Renderizar el catálogo en servicios.html y destacados del index
