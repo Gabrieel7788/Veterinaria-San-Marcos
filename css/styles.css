@@ -148,3 +148,10 @@ header img {
 .btn-naranja:hover { 
     background-color: #d35400; 
 }
+
+.btn-rojo { 
+    background-color: #da4d4d; 
+}
+.btn-rojo:hover { 
+    background-color: #9f2828; 
+}

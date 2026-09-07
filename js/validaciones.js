@@ -116,6 +116,8 @@ if (formLogin) {
         
         errorMsg.style.color = "green";
         errorMsg.textContent = "¡Ingreso exitoso! Redirigiendo...";
+        // Simular que un cliente inició sesión al hacer login
+        localStorage.setItem("sesionSanMarcos", JSON.stringify({ rol: "cliente" }));
         setTimeout(() => { window.location.href = "admin.html"; }, 1500);
     });
 }
