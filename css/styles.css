@@ -23,9 +23,7 @@ header nav a {
     font-weight: bold;
 }
 
-header nav a:hover {
-    color: #1abc9c;
-}
+
 
 /* Contenedor de Servicios */
 #contenedor-servicios {
@@ -117,4 +115,36 @@ header img {
     text-align: center;
     color: #2c3e50;
     margin-bottom: 20px;
+}
+
+/* Estructura base del botón */
+.btn-menu {
+    display: inline-block;
+    padding: 10px 20px; /* 10px de alto, 20px de ancho interior */
+    text-decoration: none; /* Elimina la línea azul predeterminada */
+    color: white;
+    font-weight: bold;
+    border-radius: 6px; /* Redondea las esquinas del recuadro */
+    margin: 0 5px; /* Separa un botón del otro */
+    transition: transform 0.2s, background-color 0.2s; /* Hace que el cambio de color sea suave */
+}
+
+/* Efecto visual al poner el ratón encima */
+.btn-menu:hover {
+    transform: translateY(-3px); /* Levanta el botón ligeramente */
+}
+
+/* Asignación de colores individuales */
+.btn-azul { 
+    background-color: #3498db; 
+}
+.btn-azul:hover { 
+    background-color: #2980b9; /* Tono más oscuro al pasar el ratón */
+}
+
+.btn-naranja { 
+    background-color: #e67e22; 
+}
+.btn-naranja:hover { 
+    background-color: #d35400; 
 }
