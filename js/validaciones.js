@@ -8,7 +8,7 @@ const regionesYComunas = [
 const selectRegion = document.getElementById("region");
 const selectComuna = document.getElementById("comuna");
 
-// 2. Cargar Regiones dinámicamente
+// 2. Cargar Regiones
 if (selectRegion && selectComuna) {
     regionesYComunas.forEach(region => {
         let option = document.createElement("option");
@@ -31,7 +31,7 @@ if (selectRegion && selectComuna) {
     });
 }
 
-// 3. Función para validar el RUT chileno (Módulo 11)
+// 3. Función para validar rut
 function validarRUT(rut) {
     if (!/^[0-9]+[0-9kK]{1}$/.test(rut)) return false;
     let cuerpo = rut.slice(0, -1);
@@ -48,7 +48,7 @@ function validarRUT(rut) {
     return dvEsperado === dv;
 }
 
-// --- LÓGICA DE REGISTRO ---
+//- LÓGICA DE REGISTRO -
 const formRegistro = document.getElementById("formRegistro");
 if (formRegistro) {
     formRegistro.addEventListener("submit", function(e) {
@@ -92,7 +92,7 @@ if (formRegistro) {
     });
 }
 
-// --- LÓGICA DE INICIO DE SESIÓN ---
+//- LÓGICA DE INICIO DE SESIÓN -
 const formLogin = document.getElementById("formLogin");
 if (formLogin) {
     formLogin.addEventListener("submit", function(e) {
@@ -122,7 +122,7 @@ if (formLogin) {
     });
 }
 
-// --- LÓGICA DE CONTACTO ---
+//- LÓGICA DE CONTACTO -
 const formContacto = document.getElementById("formContacto");
 if (formContacto) {
     formContacto.addEventListener("submit", function(e) {

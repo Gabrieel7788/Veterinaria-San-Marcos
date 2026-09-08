@@ -1,20 +1,21 @@
 // 1. Arreglo de Servicios
 const servicios = [
     { id: 'SV001', categoria: 'Consultas', nombre: 'Consulta general', especie: 'Perro / Gato', duracion: '30 min', precio: 15000, obs: 'Ninguna', imagen: 'img/gato.jpg' },
-    { id: 'SV002', categoria: 'Consultas', nombre: 'Consulta urgencia', especie: 'Perro / Gato', duracion: '30 min', precio: 25000, obs: 'Fuera de horario +$10.000', imagen: 'img/gato.jpg' },
+    { id: 'SV002', categoria: 'Consultas', nombre: 'Consulta urgencia', especie: 'Perro / Gato', duracion: '30 min', precio: 25000, obs: 'Fuera de horario +$10.000', imagen: 'img/urgencia.jpg' },
     { id: 'VA001', categoria: 'Vacunación', nombre: 'Vacuna antirrábica canina', especie: 'Perro', duracion: '10 min', precio: 12000, obs: 'Obligatoria por ley', imagen: 'img/vacuna.jpg' },
-    { id: 'VA003', categoria: 'Vacunación', nombre: 'Vacuna bivalente felina', especie: 'Gato', duracion: '10 min', precio: 15000, obs: 'Refuerzo anual', imagen: 'img/vacuna.jpg' },
-    { id: 'CI002', categoria: 'Cirugía', nombre: 'Esterilización macho canino', especie: 'Perro', duracion: '60 min', precio: 60000, obs: 'Incluye anestesia', imagen: 'img/gato.jpg' },
+    { id: 'VA003', categoria: 'Vacunación', nombre: 'Vacuna bivalente felina', especie: 'Gato', duracion: '10 min', precio: 15000, obs: 'Refuerzo anual', imagen: 'img/vacunagato.jpg' },
+    { id: 'CI002', categoria: 'Cirugía', nombre: 'Esterilización macho canino', especie: 'Perro', duracion: '60 min', precio: 60000, obs: 'Incluye anestesia', imagen: 'img/ester.jpg' },
     { id: 'OT002', categoria: 'Otros', nombre: 'Limpieza dental', especie: 'Perro / Gato', duracion: '45 min', precio: 55000, obs: 'Requiere anestesia', imagen: 'img/dental.jpg' }
 ];
 
-// 2. Renderizar el catálogo en servicios.html y destacados del index
+// 2. Generar el catálogo en servicios.html y destacados del index
+
 const contenedorServicios = document.getElementById("contenedor-servicios");
 
 if (contenedorServicios) {
     servicios.forEach(servicio => {
         const tarjeta = document.createElement("div");
-        tarjeta.classList.add("tarjeta-servicio"); // Uso de clase CSS
+        tarjeta.classList.add("tarjeta-servicio");
 
         tarjeta.innerHTML = `
             <img src="${servicio.imagen}" alt="${servicio.nombre}" class="tarjeta-img">
@@ -53,7 +54,7 @@ window.agregarAReserva = function(id) {
     alert(`¡${servicioSeleccionado.nombre} agregado a tus reservas!`);
 }
 
-// 5. Renderizar página de Mis Reservas (reserva.html)
+// 5. Renderizar página de Mis Reservas
 function renderizarReservas() {
     const contenedorReservas = document.getElementById("contenedor-reservas");
     if (!contenedorReservas) return;
