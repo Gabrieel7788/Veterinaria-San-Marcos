@@ -153,3 +153,10 @@ header img {
 .btn-rojo:hover { 
     background-color: #9f2828; 
 }
+
+.btn-verde { 
+    background-color: #4dda52; 
+}
+.btn-verde:hover { 
+    background-color: #228f2f; 
+}
